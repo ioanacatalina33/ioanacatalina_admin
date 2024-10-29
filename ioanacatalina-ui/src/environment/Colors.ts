@@ -17,6 +17,7 @@ export const Colors = {
         hint: '#6d6d6d',
         caption: '#888888',
         error: '#FF585D',
+        errorHover: '#E64F54',
         disabled: '#b0b0b0'
     },
     gray: {
