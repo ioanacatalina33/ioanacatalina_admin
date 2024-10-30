@@ -1,10 +1,12 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from 'routes/Root';
 import ErrorPage from 'routes/ErrorPage';
-import Home from 'routes/Home';
-import Albums from 'routes/Albums';
-import Locations from 'routes/Locations';
-import BlogPosts from 'routes/BlogPosts';
+import { Home } from 'routes/Home';
+import { Locations } from 'routes/Locations';
+import { BlogPosts } from 'routes/BlogPosts';
+import { Articles } from 'routes/Articles';
+import { Routes } from 'utils/consts';
+import { articlesLoader } from 'api/loaders';
 
 function App() {
     const router = createBrowserRouter([
@@ -14,19 +16,20 @@ function App() {
             errorElement: <ErrorPage />,
             children: [
                 {
-                    path: '/',
+                    path: Routes.Home,
                     element: <Home />
                 },
                 {
-                    path: '/albums',
-                    element: <Albums />
+                    path: Routes.Article,
+                    element: <Articles />,
+                    loader: articlesLoader
                 },
                 {
-                    path: '/locations',
+                    path: Routes.Locations,
                     element: <Locations />
                 },
                 {
-                    path: '/blog',
+                    path: Routes.Blog,
                     element: <BlogPosts />
                 }
             ]

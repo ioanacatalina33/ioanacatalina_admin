@@ -3,9 +3,9 @@ export const Colors = {
     black: '#000',
     white: '#fff',
     primary: {
-        normal: '#1f70f1',
-        hover: '#1759de',
-        disabled: '#eef7ff'
+        normal: '#00624c',
+        hover: '#059b7d',
+        disabled: '#00624c'
     },
     background: {
         normal: '#ffffff',

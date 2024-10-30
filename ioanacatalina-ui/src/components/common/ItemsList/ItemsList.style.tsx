@@ -3,11 +3,10 @@ import styled from 'styled-components';
 
 export const ListComponent = styled.div`
     background-color: ${Colors.background.hover};
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    max-height: 70vh;
-    width: 30rem;
+    max-height: 80vh;
+    width: 50rem;
     border-radius: 0.5rem;
+    overflow-y: auto;
+    padding: 2rem;
 `;

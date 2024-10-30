@@ -1,12 +1,12 @@
 import { Outlet } from 'react-router-dom';
 
 import { RootBody, RootWrapper } from './Root.style';
-import Navbar from 'UI/Navbar/Navbar';
+import Header from 'UI/Header/Header';
 
 export default function Root() {
     return (
         <RootBody>
-            <Navbar />
+            <Header />
             <RootWrapper>
                 <Outlet />
             </RootWrapper>

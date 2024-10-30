@@ -1,4 +1,4 @@
-export interface Album {
+export interface Article {
     _id?: string;
     name_url: string;
     name: string;
@@ -12,6 +12,9 @@ export interface Album {
     subtype?: string;
     url?: string;
     identifier: string;
+    description: string;
+    keywords: string;
+    metadata: string;
 }
 
 export interface Location {
@@ -19,7 +22,7 @@ export interface Location {
     name: string;
     coord_lat: string;
     coord_long: string;
-    articles: Album[];
+    articles: Article[];
 }
 
 export enum AlbumType {
