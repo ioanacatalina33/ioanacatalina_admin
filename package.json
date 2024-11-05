@@ -8,7 +8,9 @@
         "server": "nodemon src/index.ts",
         "client": "npm start --prefix ioanacatalina-ui",
         "dev": "concurrently \"tsc -w\" \"npm run server\" \"npm run client\"",
-        "start": "concurrently \"tsc -w\" \"npm run server\""
+        "start": "concurrently \"tsc -w\" \"npm run server\"",
+        "lint": "eslint 'src/**/*.{ts,tsx}'",
+        "lint:fix": "eslint . --fix"
     },
     "author": "",
     "license": "ISC",
